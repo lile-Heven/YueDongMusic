@@ -1,0 +1,2 @@
+试试看，新建一个txt文件后，再次push到remote repository需要多长时间。
+以及，是否每次提交一次就产生一个branch（分支；时间节；）
