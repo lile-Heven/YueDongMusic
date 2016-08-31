@@ -40,7 +40,7 @@ public class MusicPlayService extends Service {
 	Builder builder;
 	/** 当前音乐索引 */
 	// -1代表打开app最开始初始化时
-	public static int CURRENT_MUSIC_ID = -1;
+	public static int CURRENT_MUSIC_ID = 0;
 	// 8代表点击play进入，0代表点击listview进入
 	public static int flags = -1;
 	// 是否点进的是同一首歌
@@ -233,9 +233,8 @@ public class MusicPlayService extends Service {
 
 	// 初始化一个mediaPlayer并给以联系一个音频文件
 	private void init_music_one() {
-		// TODO 自动生成的方法存根
 		mediaPlayer = new MediaPlayer();
-		// reconnect_data();
+		reconnect_data();
 	}
 
 	public void reconnect_data() {
@@ -256,10 +255,12 @@ public class MusicPlayService extends Service {
 		} else {
 			thread_seekbar = new MyThread();
 		}
-		// 好像是无论mediaplayer处于什么状态，都可以强制reset的，好像是。。。
-		mediaPlayer.reset();
-		isPlay_or_not = 0;
+		
 		try {
+			
+			// 好像是无论mediaplayer处于什么状态，都可以强制reset的，好像是。。。
+			mediaPlayer.reset();
+			isPlay_or_not = 0;
 			mediaPlayer.setDataSource(this, Uri
 					.parse(MusicPlayerUtils.MUSICLIST.get(CURRENT_MUSIC_ID)
 							.getData_Url()));
