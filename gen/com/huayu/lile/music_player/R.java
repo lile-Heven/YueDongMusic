@@ -204,24 +204,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int qingzanggaoyuan_hanhong=0x7f020029;
         public static final int redgirl=0x7f02002a;
         public static final int scanfile=0x7f02002b;
-        public static final int selector_button_circle_corner=0x7f02002c;
-        public static final int selector_main_toptv=0x7f02002d;
-        public static final int shadow=0x7f02002e;
-        public static final int shape_button_circle_corner=0x7f02002f;
-        public static final int shape_button_circle_corner_pressed=0x7f020030;
-        public static final int shape_color_alpha33=0x7f020031;
-        public static final int shape_color_alpha66=0x7f020032;
-        public static final int shape_color_alpha99=0x7f020033;
-        public static final int tianmimi_denglijun=0x7f020034;
-        public static final int unlogin=0x7f020035;
-        public static final int viewpager_view1=0x7f020036;
-        public static final int viewpager_view2=0x7f020037;
-        public static final int viewpager_view3=0x7f020038;
-        public static final int wwj_748=0x7f020039;
-        public static final int yishengheqiu_chenbaiqiang=0x7f02003a;
-        public static final int zaixiwangdetianyeshang_pengliyuan=0x7f02003b;
+        public static final int search_actionbar=0x7f02002c;
+        public static final int selector_button_circle_corner=0x7f02002d;
+        public static final int selector_main_toptv=0x7f02002e;
+        public static final int shadow=0x7f02002f;
+        public static final int shape_button_circle_corner=0x7f020030;
+        public static final int shape_button_circle_corner_pressed=0x7f020031;
+        public static final int shape_color_alpha33=0x7f020032;
+        public static final int shape_color_alpha66=0x7f020033;
+        public static final int shape_color_alpha99=0x7f020034;
+        public static final int tianmimi_denglijun=0x7f020035;
+        public static final int unlogin=0x7f020036;
+        public static final int viewpager_view1=0x7f020037;
+        public static final int viewpager_view2=0x7f020038;
+        public static final int viewpager_view3=0x7f020039;
+        public static final int wwj_748=0x7f02003a;
+        public static final int yishengheqiu_chenbaiqiang=0x7f02003b;
+        public static final int zaixiwangdetianyeshang_pengliyuan=0x7f02003c;
     }
     public static final class id {
+        public static final int action_search=0x7f070048;
+        public static final int action_settings=0x7f070049;
         public static final int activity_seekbar=0x7f070034;
         public static final int bt_change_playmode=0x7f07002f;
         public static final int bt_login_login=0x7f070007;
@@ -310,6 +313,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int slidingmenumain=0x7f03000b;
         public static final int viewpager_activity=0x7f03000c;
         public static final int viewpager_view3=0x7f03000d;
+    }
+    public static final class menu {
+        public static final int main_activity_actions=0x7f0a0000;
     }
     public static final class string {
         public static final int app_name=0x7f090000;

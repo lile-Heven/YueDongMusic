@@ -18,6 +18,8 @@ import android.os.Handler.Callback;
 import android.os.Message;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.AnimationUtils;
@@ -236,8 +238,20 @@ public class MainActivity extends Activity implements OnClickListener {
 		
 	}
 
+	/**
+	 * 为actionbar栏目增加一些action
+	 */
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+
+		MenuInflater menuInflater=getMenuInflater();
+		menuInflater.inflate(R.menu.main_activity_actions, menu);
+		
+		return super.onCreateOptionsMenu(menu);
+	}
 	@Override
 	public void onClick(View v) {
+
 		switch (v.getId()) {
 		case R.id.main_bottom_play:
 			Intent music_player_intent = new Intent(
@@ -245,24 +259,27 @@ public class MainActivity extends Activity implements OnClickListener {
 			music_player_intent.putExtra("flag", 1);// 播放按钮
 			sendBroadcast(music_player_intent);
 			break;
+			
 		case R.id.main_bottom_pre:
 			Intent music_pre_intent = new Intent(
 					MusicPlayerUtils.play_player_ACTION);
 			music_pre_intent.putExtra("flag", 0);// 上一首按钮监听-flag
 			sendBroadcast(music_pre_intent);
 			break;
+			
 		case R.id.main_bottom_next:
 			Intent music_next_intent = new Intent(
 					MusicPlayerUtils.play_player_ACTION);
 			music_next_intent.putExtra("flag", 2);// 播放按钮
 			sendBroadcast(music_next_intent);
 			break;
+			
 		case R.id.jump_to_musicplay:
 			Intent intent=new Intent(this,MusicPlayActivity.class);
 			MusicPlayService.flags=8;
 			startActivity(intent);
-			
 			break;
+			
 		case R.id.tv_tab3:
 			Toast.makeText(this, "很抱歉，此模块暂未开发", 0).show();
 			break;
@@ -314,7 +331,12 @@ public class MainActivity extends Activity implements OnClickListener {
 			break;
 		}
 	}
+	
 	static int scanfile_number=0;
+	/**
+	 * 此方法目的是扫描数据库索引，搜索存储卡中的所有音乐文件
+	 * @param f 文件夹路径
+	 */
 	private void scanfile(File f){
 		
         if(f.isDirectory()){
