@@ -1,4 +1,0 @@
-It's test2 between my mp3 project and github.
-I want to know what will happen that
-when i add new things in eclipse and 
-push by using git gui .

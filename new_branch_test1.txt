@@ -1,2 +1,0 @@
-我通过git gui 新建了一个branch---mp3new_branch
-现在push以后，github会发生什么呢？

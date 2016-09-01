@@ -17,7 +17,7 @@ public class LaunchActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		//requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.launch);
 		iv=(ImageView)findViewById(R.id.iv_launch_activity);
 		//iv.setAnimation(AnimationUtils.loadAnimation(this, R.anim.alpha_launch_pic));
