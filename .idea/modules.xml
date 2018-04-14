@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/com.huayu.lile0.4.9.music_player.iml" filepath="$PROJECT_DIR$/.idea/com.huayu.lile0.4.9.music_player.iml" />
+      <module fileurl="file://$PROJECT_DIR$/YDMusic.iml" filepath="$PROJECT_DIR$/YDMusic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
